@@ -42,16 +42,19 @@ jobs:
       - name: Build project
         run: npm run build  # Run the build command
 
+      - name: Export project
+        run: npm run export  # Run export command to create static files
+
       - name: List current directory
         run: ls -al
         
-      - name: List dist directory
-        run: ls -al ./dist  # Confirm the dist folder exists and contains files
+      - name: List output directory
+        run: ls -al ./out  # Confirm the output folder exists and contains files
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist  # Ensure this path matches your output directory
+          path: ./out  # Ensure this path matches your output directory
 
       - name: Deploy to GitHub Pages
         id: deployment
