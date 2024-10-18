@@ -40,10 +40,7 @@ jobs:
         run: npm install  # Install dependencies before building
 
       - name: Build project
-        run: npm run build  # Run the build command
-
-      - name: Export project
-        run: npm run export  # Run export command to create static files
+        run: npm run build  # This will handle the export automatically
 
       - name: List current directory
         run: ls -al
