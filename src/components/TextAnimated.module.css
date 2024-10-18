@@ -1,0 +1,53 @@
+.TextAnimated{
+    font-size: 50px;
+	color:white;
+	background-color: transparent;
+	font-weight: 900;	
+	left:50%;
+	translate:50% 50%;
+	position:relative;
+	z-index: 1;
+	animation:TextAnimated 4s 0s ease infinite;
+	text-align: center;
+}
+
+.TextAnimatedContainer{
+	overflow: hidden;
+	min-width: 220px;
+	width:100%;
+	position:relative;
+}
+
+@keyframes TextAnimated{
+	0%{
+		opacity: 0;
+		translate: -50% 7px;
+	}
+	0.5%{
+		opacity: 0;
+		translate: -50% 7px;
+	}
+	5.5%{
+		opacity: 1;
+
+		translate: -50% -0px;
+	}
+	50%{
+		opacity: 1;
+		translate: -50% -0px;
+	}
+	96%{
+		opacity: 1;
+		translate: -50% -0px;
+	}
+	100%{
+		opacity: 0;
+		translate: -50% -50px;	
+	}
+}
+@media all and (max-width:300px){
+	.TextAnimated{
+		line-height: 48px;
+
+	}
+}
