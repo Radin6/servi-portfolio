@@ -1,7 +1,6 @@
 "use client";
 import {useState} from "react";
 
-import {ProfileMenu} from "../ProfileMenu/ProfileMenu";
 import ShowSlideButton from "../Sidebar/ShowSlideButton";
 
 import {Button, Box, Flex, Spacer} from "@/components/chakra-client/components";
@@ -48,7 +47,6 @@ export default function NavbarResponsive({children, logo}) {
                   </span>
                 )}
               </Button>
-            <ProfileMenu />
           </Flex>
         </Box>
       </Flex>

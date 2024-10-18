@@ -1,8 +1,5 @@
 "use client";
 
-import NextLink from "next/link";
-import {Link} from "@chakra-ui/react";
-
 import ShowSlideButton from "@/components/Sidebar/ShowSlideButton";
 import {Container, Box, Flex} from "@/components/chakra-client/components";
 

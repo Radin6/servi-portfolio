@@ -2,6 +2,8 @@
 import {HamburgerIcon} from "@chakra-ui/icons";
 
 import {Box} from "@/components/chakra-client/components";
+import toast from "react-hot-toast";
+
 
 const ShowSlideButton = () => {
 
@@ -9,7 +11,7 @@ const ShowSlideButton = () => {
     <Box
       _hover={{cursor: "pointer"}}
       mr={{md: "1rem"}}
-      onClick={() => setShowSidebar(!showSidebar)}
+      onClick={()=>toast("This is a mock page.")}
     >
       <HamburgerIcon
         _hover={{color: "gray.500"}}

@@ -4,20 +4,19 @@ import {CloseButton, Slide, useMediaQuery} from "@chakra-ui/react";
 
 import Links from "./Links";
 
-import {useSidebar} from "@/store/useSidebar";
 import {Box, Button, Flex, Text, VStack} from "@/components/chakra-client/components";
 import ServiLogo from "@/components/ServiLogo/ServiLogo";
 
 const Sidebar = () => {
   const [isXL] = useMediaQuery("(min-width: 1600px)");
-  const {showSidebar, setShowSidebar, isDesktop, setIsDesktop} = useSidebar((state) => state);
+  const [showSidebar, setShowSidebar] = useState(false);
 
   useEffect(() => {
     setIsDesktop(isXL);
   }, [isXL]);
 
-  const handleCloseSlide = (evt) => {
-    evt.target.id === "slide" && setShowSidebar(false);
+  const handleCloseSlide = () => {
+    setShowSidebar(false);
   };
 
   return (

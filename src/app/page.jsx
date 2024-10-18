@@ -39,7 +39,7 @@ export default function HomePage() {
             Suitable for freelancers, teams, or even companies!
           </Text>
           <Button mt={8} variant="solid" onClick={() => toast('This is a mock page')}>
-            Get started - it's free!
+            {`Get started - it's free!`}
           </Button>
           <Box border='1px' borderColor="red" marginTop={7}>
             <Text textColor={"red"} >This is a mockup for Servi (version 1). The project is currently in a private repository due to proprietary
